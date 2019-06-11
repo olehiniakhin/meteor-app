@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Task from './Task'
 
 export default class App extends Component {
-    getTasks = () => {
+    getTasks() {
         return [
             { _id: 1, text: 'This is task 1' },
             { _id: 2, text: 'This is task 2' },
@@ -10,13 +10,13 @@ export default class App extends Component {
         ]
     }
 
-    renderTasks = () => {
+    renderTasks() {
         return this.getTasks().map((task) => (
             <Task key={task.id} task={task} />
         ))
     }
 
-    render = () => {
+    render() {
         return (
             <div className="container">
                 <header>
