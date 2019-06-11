@@ -50,11 +50,10 @@ form {
 
 .new-task input {
   box-sizing: border-box;
-  padding: 10px 0;
+  padding: 10px 10px;
   background: transparent;
   border: none;
   width: 100%;
-  padding-right: 80px;
   font-size: 1em;
 }
 
@@ -122,17 +121,4 @@ header .hide-completed {
   .new-task input {
     padding-bottom: 5px;
   }
-}
-
-.new-task input {
-  box-sizing: border-box;
-  padding: 10px 10px;
-  background: transparent;
-  border: none;
-  width: 100%;
-  font-size: 1em;
-}
-
-.new-task input:focus{
-  outline: 0;
 }
