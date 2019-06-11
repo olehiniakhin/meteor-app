@@ -123,3 +123,16 @@ header .hide-completed {
     padding-bottom: 5px;
   }
 }
+
+.new-task input {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  font-size: 1em;
+}
+
+.new-task input:focus{
+  outline: 0;
+}
