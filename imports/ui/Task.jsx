@@ -9,11 +9,12 @@ export default class Task extends Component {
     }
 
     deleteThisTask() {
+        Meteor.call('tasks.remove', this.props.task_id);
         Tasks.remove(this.props.task._id)
     }
 
     render() {
-        const taskClassName = this.props.task.checked ? 'checked' : ''
+        const taskClassName = this.props.task.checked ? 'checked' : '';
 
         return (
             <li className={taskClassName}>
